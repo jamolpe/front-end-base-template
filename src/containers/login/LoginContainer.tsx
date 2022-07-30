@@ -1,7 +1,7 @@
 import React from 'react';
 import Login from '../../components/login/Login';
 import { UserData } from '../../services/auth';
-import './logincontainer.scss';
+import './loginContainer.scss';
 
 interface LoginContainerProps {
   loginUser: (userData: UserData) => void;

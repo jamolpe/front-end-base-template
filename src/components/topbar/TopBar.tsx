@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { statusSelector } from '../../store/reducers/status/status-reducer';
 import Status from '../status/Status';
-import './topbar.scss';
+import './topBar.scss';
 
 interface TopBarState {
   logged: boolean;

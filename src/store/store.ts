@@ -8,10 +8,7 @@ export const store = configureStore({
     auth: authReducer,
     status: statusReducer
   },
-  middleware:
-    process.env.ENV === 'prod'
-      ? (getDefaultMiddleware) => getDefaultMiddleware()
-      : (getDefaultMiddleware) => getDefaultMiddleware().concat(logger)
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger)
 });
 
 export type RootState = ReturnType<typeof store.getState>;
