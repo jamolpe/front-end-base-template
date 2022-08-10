@@ -22,6 +22,7 @@ interface stateType {
   from: { pathname: string };
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function Copyright(props: any) {
   return (
     <Typography
