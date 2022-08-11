@@ -7,6 +7,7 @@ import { loginUser } from '../../store/reducers/auth/auth-actions';
 import { authSelector } from '../../store/reducers/auth/auth-reducer';
 import LoginContainer from '../login/LoginContainer';
 
+import './mainContainer.scss';
 const MainContainer = () => {
   const { logged, user } = useSelector(authSelector);
   const dispatch = useAppDispatch();
